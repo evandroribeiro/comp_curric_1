@@ -25,7 +25,7 @@ echo "$linha $i <br>";
 ?>
 
 <?php
-  $n=5;
+  $n=4;
    for( $i=0;$i<=$n;$i++){
    	    echo "$i=$n-1 <br>";
    	     }
@@ -46,4 +46,4 @@ echo "$linha $i <br>";
 
   ?> 
 </body>
-</html>S
+</html>

@@ -1,8 +1,8 @@
 <!docty pe html>
 <html>
-<head>
-<meta charset = "UTF 8"/>
-</head>
+ <head>
+   <meta charset = "UTF 8"/>
+     </head>
 <body>
 <?php
 //3.	Utilizando a condição switch(): 
