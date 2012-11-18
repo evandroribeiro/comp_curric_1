@@ -16,7 +16,7 @@ $linha="Lactobacilos vivos também possuem sentimentos"
         </head>
 <body>
 <?php
-
+   echo "<h2>RESPOSTA A</h2>";
 for ($i = 0; $i < 26; $i++)
 {
 echo "$linha $i <br>";
@@ -25,25 +25,32 @@ echo "$linha $i <br>";
 ?>
 
 <?php
-  $n=4;
+     echo "<h2>RESPOSTA B</h2>";
+  $n=8;
    for( $i=0;$i<=$n;$i++){
-   	    echo "$i=$n-1 <br>";
+   	    echo "$i <br>";
    	     }
 ?>
 
 <?php
+        echo "<h2>RESPOSTA c</h2>";
+ $n1=5;       
  $n=10;
-    for( $i=5;$i<=$n;$i++){
-   	    echo "$i=$n-1 <br><t>";
+    for( $i=$n1+1;$i<=$n;$i++){
+   	    echo "$i <br><t>";
    	     }
   ?>  
   <?php
-      $n1=5;
-      $n=4;
-      echo "($n1*$n)=$n."+".$n";
-
-
-
+        echo "<h2>RESPOSTA D</h2>";
+       
+        $valor1 = 3;
+      $valor2 = 5; 
+      $soma = 0;
+      for ($i=0; $i < $valor1  ; $i++) { 
+          $soma += $valor2;
+        } 
+      echo "<p>$soma</p>"
+  
   ?> 
 </body>
 </html>
