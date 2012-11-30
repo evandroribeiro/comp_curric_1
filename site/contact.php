@@ -5,7 +5,7 @@
     <title>meu site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="oseias dalponte">
+    <meta name="author" content="evandro ribeiro">
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
