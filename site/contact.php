@@ -1,10 +1,22 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <title></title>
 
   <link rel="stylesheet" href="css/bootstrap.css">
+=======
+  <head>
+    <meta charset="utf-8">
+    <title>meu site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="evandro ribeiro">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+>>>>>>> 65291a97fd439a1a80e27d61e7963d98eb932382
     <style type="text/css">
       body {
         padding-top: 60px;
