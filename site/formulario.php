@@ -1,40 +1,41 @@
 ?php
 
-// $_POST = variavel 
+  // $_POST = variavel
 
- // var_dump ($_POST);
-//se for enviado um post e a  variaavel não é vazia 
-//então mostrar os dados
+  // var_dump($_POST);
 
 
-
-if(isset ($_POST["pagina"]) && $_POST["pagina"] == "contact") {
-$nome= $_POST["nome"]."</br>";
-$email = $_POST["email"]."<br>";
-$msg = $_POST["mensagem"];
-
-//conectar com o banco 
-
-mysql_connect("localhost","root","root") or //local host é o nosso servidor no caso agora 
-die(mysql_error());
-
-mysql_select_db("teste_php") or die (mysql_error());
-
-//gerar o sql para inserir
-
-$sql = "INSERT INTO contacts (name,email,message,created)VALUES ('Oseias Dalponte','oseiasdalponte','essa é uma mensagem legal!',NOW())";
+// SE for enviado um post e a variavel não é vazia
+// então mostrar os dados
+  if(isset($_POST["pagina"]) && $_POST["pagina"] == "contato" ){
 
 
-echo $sql;
-
-mysql_query($sql) or die (mysql_error());
-
-mysql_close();
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $msg = $_POST["mensagem"];
 
 
-} else{
-	header("location:contact.php");
-}
+    // conectar com o banco
+    mysql_connect("localhost", "root", "root") or die(mysql_error());
 
-//senão 
-//redirecionar para a pagina de contato
+    mysql_select_db("teste_php") or die(mysql_error());
+
+    // gerar o SQL para inserir
+
+    $sql = "INSERT INTO contacts (name, email, message, created) VALUES ('{$nome}', '{$email}', '{$msg}', NOW())";
+
+    // echo $sql;
+
+    mysql_query($sql) or die(mysql_error());
+
+    mysql_close();
+
+
+
+  } else {
+// senão
+// redirecionar para a página de contato
+    echo "nao existe pagina";
+    // header("Location: contact.php");
+  }
+?>
