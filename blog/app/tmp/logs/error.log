@@ -183,8 +183,10 @@
 #3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2012-11-28 21:29:30 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [C:\xampp\htdocs\mano\blog\app\Controller\HelloController.php, line 25]
-2012-11-28 21:29:30 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+2012-11-28 21:29:30 Error: Fatal Error (4): syntax error, unexpected '?>
+', expecting function (T_FUNCTION) in [C:\xampp\htdocs\mano\blog\app\Controller\HelloController.php, line 25]
+2012-11-28 21:29:30 Error: [FatalErrorException] syntax error, unexpected '?>
+', expecting function (T_FUNCTION)
 #0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 25)
 #1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 25, Array)
 #2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 25, Array)
@@ -1249,6 +1251,338 @@
 #5 {main}
 2012-12-04 19:16:56 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
 2012-12-04 19:16:56 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:03:14 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:03:14 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:03:14 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:07:59 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:07:59 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:07:59 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:12:32 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:12:32 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:12:32 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:12:54 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:12:54 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:12:54 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:13:26 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:13:26 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:13:26 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:19:28 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:19:28 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:19:28 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:19:48 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:19:48 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:19:48 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:20:58 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:20:58 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:20:58 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:21:39 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:21:39 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:21:39 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:23:31 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:23:31 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:23:31 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:55:28 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:55:28 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:55:28 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:55:34 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:55:34 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:55:34 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 00:59:03 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 00:59:03 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 00:59:03 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 01:06:53 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 01:06:53 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 01:06:53 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 01:14:04 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 01:14:04 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 01:14:04 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 01:16:13 Error: [MissingControllerException] Controller class List.phtmlController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 01:16:13 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 01:16:13 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 01:25:48 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 01:25:48 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 01:25:48 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 01:37:43 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 01:37:43 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 01:37:43 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:02:45 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 02:02:46 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:02:46 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:02:46 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:02:46 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:03:13 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 C:\xampp\htdocs\mano\blog\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-08 02:03:13 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:03:13 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:03:28 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:03:28 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:08:59 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:08:59 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:13:40 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:13:40 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:17:09 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:17:09 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:19:30 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:19:30 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:20:31 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:20:31 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:22:37 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:22:37 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:25:19 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:25:19 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:27:57 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:27:57 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:35:41 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:35:41 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:47:50 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:47:50 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:50:33 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:50:33 Error: [FatalErrorException] syntax error, unexpected '('
+#0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-08 02:56:45 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\xampp\htdocs\mano\blog\app\Controller\AppController.php, line 47]
+2012-12-08 02:56:45 Error: [FatalErrorException] syntax error, unexpected '('
 #0 C:\xampp\htdocs\mano\blog\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47)
 #1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)
 #2 C:\xampp\htdocs\mano\blog\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 47, Array)

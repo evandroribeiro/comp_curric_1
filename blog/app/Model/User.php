@@ -1,12 +1,59 @@
 <?php 
-App::uses('AuthComponent', 'Controller/Component');
 
-class User extends AppModel
-{
   // app/Model/User.php
 App::uses('AuthComponent', 'Controller/Component');
 class User extends AppModel {
+  /**
+     * O nome é único?
+     *
+     * Verifica se $name é único na base de dados
+     * Caso $id seja informado, ele será usado na cláusula where
+     * para selecionar os registros diferentes a este $id.
+     *
+     * @param  string  $name
+     * @param  integer $id [Opcional]
+     * @return boolean
+     */
+    public function isUniqueName($name, $id = null)
+    {
+        $select = $this->select();
+        $select->from($this->_name, 'COUNT(*) AS num')
+               ->where('name = ?', $name);
+ 
+        if ( $id != null )
+        {
+            $select->where('id != ?', (int) $id);
+        }
+ 
+        return ($this->fetchRow($select)->num == 0) ? true : false;
+    }
+/**
+     * O email é único?
+     *
+     * Verifica se $email é único na base de dados
+     * Caso $id seja informado, ele será usado na cláusula where
+     * para selecionar os registros diferentes a este $id.
+     *
+     * @param  string  $email
+     * @param  integer $id [Opcional]
+     * @return boolean
+     */
+    public function isUniqueEmail($email, $id = null)
+    {
+        $select = $this->select();
+        $select->from($this->_name, 'COUNT(*) AS num')
+               ->where('email = ?', $email);
+ 
+        if ( $id != null )
+        {
+            $select->where('id != ?', (int) $id);
+        }
+ 
+        return ($this->fetchRow($select)->num == 0) ? true : false;
+    }
+ 
 
+}
 // ...
 
 public function beforeSave($options = array()) {
@@ -18,15 +65,12 @@ public function beforeSave($options = array()) {
 
 // ...
   public $name = 'User';
-  
-  public function beforeSave($options = Array()) 
-  {
-    if (isset($this->data[$this->alias]['password'])) 
-    {
-      $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
+  public function beforeSave($options = array()) {
+    if (isset($this->data[$this->alias]['password'])) {
+        $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
     }
     return true;
-  }
+}
 
   public $validate = array(
     'username' => array(

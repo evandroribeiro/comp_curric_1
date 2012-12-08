@@ -1,5 +1,5 @@
 <h1><?php echo $post["post"]["title"];?> 
-<amall>Criado em: <?php echo $post["post"]["created"]</small>
+<small>Criado em: <?php echo $post["post"]["created"]</small>
 </h1>
 
 <p>

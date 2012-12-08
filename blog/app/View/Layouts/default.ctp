@@ -19,6 +19,7 @@
   </style>
   <?php echo $this->Html->css('normalize.css') ?>
   <?php echo $this->Html->css('bootstrap-'.Configure::read('Layout.theme').'.min', null, array('data-extra' => 'theme')) ?>
+  <?php echo $this->Html->css('bootstrap-responsive.min') ?>
   <?php echo $this->Html->css('style') ?>
 
   <?php
@@ -27,20 +28,6 @@
   }
   if (is_file(WWW_ROOT . 'css' . DS . $this->params->controller . DS . $this->params->action . '.css')) {
   echo $this->Html->css($this->params->controller . '/' . $this->params->action);
-  // app/Model/User.php
-App::uses('AuthComponent', 'Controller/Component');
-class User extends AppModel {
-
-// ...
-
-public function beforeSave($options = array()) {
-    if (isset($this->data[$this->alias]['password'])) {
-        $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
-    }
-    return true;
-}
-}
-// ...
   }
   ?>
 
@@ -48,7 +35,6 @@ public function beforeSave($options = array()) {
   <?php echo $this->Html->script('lib/modernizr') ?>
 </head>
 <body>
-
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
             <![endif]-->
@@ -59,24 +45,30 @@ public function beforeSave($options = array()) {
                   <?php echo $this->Html->link( Configure::read('Application.name') ,"/",array('class' => 'brand')) ?>
                   <div class="nav-collapse">
                     <ul class="nav">
-
                       <?php if( AuthComponent::user('id') ) { ?>
                       <li class="<?php echo $this->params->controller == 'users' && $this->action == 'home' ? 'active' : '';  ?>">
                         <?php echo $this->Html->link('Home',array('controller' => 'users','action' => 'home')) ?>
                       </li>
-                      <?php } ?>
+                      <li class="<?php echo $this->params->controller == 'posts' && $this->action == 'index' ? 'active' : '';  ?>" >
+                        <?php echo $this->Html->link('Postagens',
+                        array('controller' => 'posts','action' => 'index')) ?>
+                      </li>
+                      <li class="<?php echo $this->params->controller == 'casas' && $this->action == 'teste' ? 'active' : '';  ?>" >
+                        <?php echo $this->Html->link('Casas',
+                        array('controller' => 'casas','action' => 'teste')) ?>
+                      </li>
+                      <?php } else { ?>
                       <li class="<?php echo $this->action == 'register' ? 'active' : ''; ?>">
                         <?php echo $this->Html->link(__('Register'),array('controller' => 'users','action' => 'register')) ?>
                       </li>
-
-
+                      <?php } ?>                      
                     </ul>
 
                     <?php if( AuthComponent::user('id') ) { ?>
                     <ul class="nav pull-right">
                       <li id="fat-menu" class="dropdown">
                         <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                          <i class="icon-black icon-user"></i>
+                          <i class="icon-black icon-user"></i> 
                           <?php echo AuthComponent::user('username') ?> <b class="caret"></b></a>
                           <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
                             <li>
@@ -90,7 +82,7 @@ public function beforeSave($options = array()) {
                                 </li>
                               </ul>
                             </li>
-                          </ul>
+                          </ul>   
                           <?php } ?>
 
                         </div><!--/.nav-collapse -->
