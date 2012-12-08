@@ -1,240 +1,240 @@
-<?php 
-class UsersController extends AppController
+<? php 
+classe  UsersController  estende  AppController
 {
-  
-  public function beforeFilter()
+
+  público  função  beforeFilter ()
   {
-    parent::beforeFilter();
+    pai :: beforeFilter ();
     $this->Auth->allow('register','logout','change_password','remember_password','remember_password_step_2');
   }
 
-  // actions
-  public function home()
+  / / Ações
+  público  função  casa ()
   {
-    $this->User->recursive = 0;    
+    $ This -> Usuário -> recursive  =  0 ;    
 
-    $this->set('users', $this->paginate());
+    $ This -> set ( 'usuários' ,  $ this -> paginate ());
   }
 
-  public function login() 
+  público  função  de login () 
   {
-    if ($this->request->is('post')) 
+    se  ( $ this -> pedido -> é ( 'post' )) 
     {
-      if ($this->Auth->login()) 
+      se  ( $ this -> Auth -> de login ()) 
       {
-        $this->redirect($this->Auth->redirect());
+        $ This -> redirecionar ( $ this -> Auth -> redirecionar ());
       } 
-      else 
+      outro 
       {
-        $this->Session->setFlash(__('Invalid username or password, try again'),'flash_fail');
+        $ This -> Sessão -> método setFlash ( __ ( 'username ou senha inválida, tente novamente' ), 'flash_fail' );
       }
     }
   }
 
 
-  public function logout() 
+  público  função  de logout () 
   {
-    $this->redirect($this->Auth->logout());
+    $ This -> redirecionar ( $ this -> Auth -> sair ());
   }
 
 
-  public function view($id = null) 
+  público  função  vista ( $ id  =  NULL ) 
   {
-    $this->User->id = $id;
+    $ This -> Usuário -> id  =  $ id ;
 
-    if (!$this->User->exists()) 
+    se  ( ! $ this -> Usuário -> existe ()) 
     {
-      throw new NotFoundException(__('Invalid user'));
+      lançar  novo  NotFoundException ( __ ( 'user inválido' ));
     }
 
-    $this->set('user', $this->User->read(null, $id));
+    $ This -> set ( 'user' ,  $ this -> Usuário -> leitura ( nulo ,  $ id ));
   } 
 
 
-  public function register()
+  público  função  registo ()
   {
-    if ($this->request->is('post')) 
+    se  ( $ this -> pedido -> é ( 'post' )) 
     {
-      $this->User->create();
+      $ This -> Usuário -> criar ();
 
-      if ($this->User->save($this->request->data)) 
+      se  ( $ this -> Usuário -> save ( $ this -> pedido -> dados )) 
       {
-        $this->Session->setFlash(__('The user has been saved'),'flash_success');
-        $this->redirect(array('controller' => 'pages','action' => 'home'));
+        $ This -> Sessão -> método setFlash ( __ ( 'O usuário foi salvo' ), 'flash_success' );
+        $ This -> redirecionar ( matriz ( 'controller'  =>  'Páginas' , 'action'  =>  'home' ));
       } 
-      else 
+      outro 
       {   
-        # Create a loop with validation errors
-        $this->Error->set( $this->User->invalidFields() );
+        # Criar um laço com erros de validação
+        $ This -> Erro -> set (  $ this -> Usuário -> invalidFields ()  );
       }
     }
   }
 
-  public function edit($id = null) 
+  públicos  de função  de edição ( $ id  =  NULL ) 
   {
-    $this->User->id = $id;
+    $ This -> Usuário -> id  =  $ id ;
 
-    if (!$this->User->exists()) 
+    se  ( ! $ this -> Usuário -> existe ()) 
     {
-      throw new NotFoundException(__('Invalid user'));
+      lançar  novo  NotFoundException ( __ ( 'user inválido' ));
     }
 
-    $user = $this->User->findById( $id );
-    $this->set('user',$user);
+    $ User  =  $ this -> Usuário -> findById (  $ id  );
+    $ This -> set ( 'user' , $ user );
 
-    if ($this->request->is('post') || $this->request->is('put')) 
+    se  ( $ this -> pedido -> é ( 'post' )  | |  $ this -> pedido -> é ( 'put' )) 
     {
-      if( empty($this->request->data['User']['password']) )
+      se (  vazia ( $ this -> pedido -> dados [ 'User' ] [ 'password' ])  )
       {
-        unset($this->request->data['User']['password']);
+        unset ( $ this -> pedido -> dados [ 'User' ] [ 'password' ]);
       }
 
-      if ($this->User->save($this->request->data)) 
+      se  ( $ this -> Usuário -> save ( $ this -> pedido -> dados )) 
       {
-        $this->Session->setFlash(__('The user has been saved'),'flash_success');
-        $this->redirect(array('action' => 'home'));
+        $ This -> Sessão -> método setFlash ( __ ( 'O usuário foi salvo' ), 'flash_success' );
+        $ This -> redirecionar ( matriz ( 'action'  =>  'home' ));
       } 
-      else 
+      outro 
       {
-        $this->Session->setFlash(__('The user could not be saved. Please, try again.'),'flash_fail');
+        $ This -> Sessão -> método setFlash ( __ ( 'O usuário não pôde ser salvo por favor, tente novamente.'. ), 'flash_fail' );
       }
     } 
-    else 
+    outro 
     {
-      $this->request->data = $this->User->read(null, $id);
-      unset($this->request->data['User']['password']);
+      $ This -> pedido -> dados  =  $ this -> Usuário -> leitura ( nulo ,  $ id );
+      unset ( $ this -> pedido -> dados [ 'User' ] [ 'password' ]);
     }
   } 
 
-  public function delete($id = null) 
+  público  função  apagar ( $ id  =  NULL ) 
   {
-    $this->User->id = $id;
+    $ This -> Usuário -> id  =  $ id ;
 
-    if (!$this->User->exists()) 
+    se  ( ! $ this -> Usuário -> existe ()) 
     {
-      throw new NotFoundException(__('Invalid user'));
+      lançar  novo  NotFoundException ( __ ( 'user inválido' ));
     }
 
-    if ($this->User->delete()) 
+    se  ( $ this -> Usuário -> Apagar ()) 
     {
-      $this->Session->setFlash(__('User deleted'),'flash_success');
-      $this->redirect(array('action' => 'home'));
+      $ This -> Sessão -> método setFlash ( __ ( 'Usuário apagado' ), 'flash_success' );
+      $ This -> redirecionar ( matriz ( 'action'  =>  'home' ));
     }
 
-    $this->Session->setFlash(__('User was not deleted'),'flash_fail');
+    $ This -> Sessão -> método setFlash ( __ ( 'Usuário não foi excluída' ), 'flash_fail' );
 
-    $this->redirect(array('action' => 'home'));
+    $ This -> redirecionar ( matriz ( 'action'  =>  'home' ));
   }    
 
 
-  public function change_password()
+  público  função  change_password ()
   {
-    $user = $this->User->read(null,AuthComponent::user('id'));
-    $this->set('user', $user);
+    $ User  =  $ this -> Usuário -> leitura ( nulo , AuthComponent :: usuário ( "id" ));
+    $ This -> set ( 'user' ,  $ user );
 
-    if( $this->request->is('post') )
+    se (  $ this -> pedido -> é ( 'post' )  )
     {
-      # Verify if password matches
-      if( $this->request->data['User']['password'] === $this->request->data['User']['re_password'] )
+      # Verifique se a senha corresponde
+      se (  $ this -> pedido -> dados [ 'User' ] [ 'password' ]  ===  $ this -> pedido -> dados [ 'User' ] [ 're_password' ]  )
       {
-        # Verify if user is logged in
-        if( AuthComponent::user('id') )
+        # Verifique se o usuário está logado
+        se (  AuthComponent :: usuário ( "id" )  )
         {
-          $this->request->data['User']['id'] = AuthComponent::user('id');
+          $ This -> pedido -> dados [ 'User' ] [ 'id' ]  =  AuthComponent :: usuário ( "id" );
         }
-        else # Maybe hes comming from change password form
+        outra  # Talvez hes vindo de forma de alteração de senha
         {
-          # Check the hash in database
-          $user = $this->User->findByHashChangePassword( $this->request->data['User']['hash'] );
+          # Verifique o hash no banco de dados
+          $ User  =  $ this -> Usuário -> findByHashChangePassword (  $ this -> pedido -> dados [ 'User' ] [ 'hash' ]  );
           
-          if( !empty($user) )
+          se (  ! vazio ( $ user )  )
           {
-            $this->request->data['User']['id'] = $user['User']['id'];
+            $ This -> pedido -> dados [ 'User' ] [ 'id' ]  =  $ user [ 'User' ] [ 'id' ];
 
-            # Clean users hash in database
-            $this->request->data['User']['hash_change_password'] = '';
+            # Usuários Limpo de hash no banco de dados
+            $ This -> pedido -> dados [ 'User' ] [ 'hash_change_password' ]  =  '' ;
           }
-          else
+          outro
           {
-            throw new MethodNotAllowedException(__('Invalid action'));
+            lançar  novo  MethodNotAllowedException ( __ ( "ação inválido ' ));
           }
         }
 
-        if( $this->User->save( $this->request->data ) )
+        se (  $ this -> Usuário -> save (  $ this -> pedido -> dados  )  )
         {
-          $this->Session->setFlash('Password updated successfully!','flash_success');
-          $this->redirect(array('controller' => 'users', 'action' => 'home'));
+          $ This -> Sessão -> método setFlash ( 'Senha atualizada com sucesso!' , 'flash_success' );
+          $ This -> redirecionar ( matriz ( 'controller'  =>  'users' ,  'action'  =>  'home' ));
         }
       }
-      else
+      outro
       {
-        $this->Session->setFlash('Passwords do not match.','flash_fail');
+        $ This -> Sessão -> método setFlash ( 'As senhas não coincidem. " , "flash_fail ' );
       }
     }
   }
 
 
-  /**
-  * Email form to inform the process of remembering the password.
-  * After entering the email is checked if this email is valid and if so, a message is sent containing a link to change your password
-  */
-  public function remember_password()
+  / **
+  * Email para informar o processo de lembrar a senha.
+  * Depois de digitar o e-mail é verificado se este e-mail é válido e se assim for, é enviada uma mensagem contendo um link para mudar sua senha
+  * /
+  público  função  remember_password ()
   {
-    if( $this->request->is('post') )
+    se (  $ this -> pedido -> é ( 'post' )  )
     {
-      $user = $this->User->findByEmail( $this->request->data['User']['email'] );
+      $ User  =  $ this -> Usuário -> findByEmail (  $ this -> pedido -> dados [ 'User' ] [ 'email' ]  );
 
-      if( empty($user) )
+      se (  vazia ( $ user )  )
       {
-        $this->Session->setFlash('This email does not exist in our database.','flash_fail');
-        $this->redirect(array('action' => 'login'));
+        $ This -> Sessão -> método setFlash ( "Este e-mail não existe na nossa base de dados. ' , 'flash_fail' );
+        $ This -> redirecionar ( matriz ( 'action'  =>  'login' ));
       }
 
-      $hash = $this->User->generateHashChangePassword();
+      $ Hash  =  $ this -> Usuário -> generateHashChangePassword ();
 
-      $data = array(
-        'User' => array(
-          'id' => $user['User']['id'],
-          'hash_change_password' => $hash
+      $ Dados  =  matriz (
+        'Usuário'  =>  matriz (
+          'Id'  =>  $ user [ 'User' ] [ 'id' ],
+          'Hash_change_password'  =>  hash $
           )
         );
 
-      $this->User->save($data);
+      $ This -> Usuário -> save ( $ dados );
 
-      $email = new CakeEmail();
-      $email->template('remember_password', 'default')
-      ->config('gmail')
-      ->emailFormat('html')
-      ->subject(__('Remember password - '.Configure::read('Application.name')))
-      ->to( $user['User']['email'] )
-      ->from( Configure::read('Application.from_email') )
-      ->viewVars(array('hash' => $hash))
-      ->send();        
+      $ Email  =  novo  CakeEmail ();
+      $ Email -> modelo ( 'remember_password' ,  'default' )
+      -> configuração ( 'gmail' )
+      -> emailFormat ( 'html' )
+      -> sujeito ( __ ( 'Lembrar senha -' . Configure :: ler ( 'Application.name' )))
+      -> a (  $ user [ 'User' ] [ 'email' ]  )
+      -> a partir de (  Configure :: ler ( 'Application.from_email' )  )
+      -> viewVars ( matriz ( 'hash'  =>  $ hash ))
+      -> enviar ();        
 
-      $this->Session->setFlash('Check your e-mail to continue the process of recovering password.','flash_success');
+      $ This -> Sessão -> método setFlash ( 'Verifique se o seu e-mail para continuar o processo de recuperação de senha.' , 'flash_success' );
 
     }
   }
 
-  /**
-  * Step 2 to change the password.
-  * This step verifies that the hash is valid, if it is, show the form to the user to inform your new password
-  */
-  public function remember_password_step_2( $hash = null )
+  / **
+  * Etapa 2 para alterar a senha.
+  * Esta etapa verifica se o hash é válido, se for, mostrar o formulário para o usuário informar sua nova senha
+  * /
+  público  função  remember_password_step_2 (  $ hash  =  nulo  )
   {
     
-    $user = $this->User->findByHashChangePassword( $hash );
+    $ User  =  $ this -> Usuário -> findByHashChangePassword (  $ hash  );
 
-    if( $user['User']['hash_change_password'] != $hash || empty($user))
+    se (  $ user [ 'User' ] [ 'hash_change_password' ]  =!  $ hash  | |  vazio ( $ user ))
     {
-      throw new NotFoundException(__('Link invÃ¡lido'));
+      lançar  novo  NotFoundException ( __ ( 'Link inválido' ));
     }
 
-    # Sends the hash to the form to check before changing the password
-    $this->set('hash',$hash);
+    # Envia o hash para o formulário para verificar antes de alterar a senha
+    $ This -> set ( 'hash' , $ hash );
 
-    $this->render('/Users/change_password');
+    $ This -> renderizar ( "/ Users / change_password ' );
     
   }  
 }
-?>
+>

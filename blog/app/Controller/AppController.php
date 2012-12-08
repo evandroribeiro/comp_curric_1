@@ -32,12 +32,6 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
        class AppController extends Controller 
-       public function beforeSave($options = array()) {
-    if (isset($this->data[$this->alias]['password'])) {
-        $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
-    }
-    return true;
-}
 {
 	public $components = array('Auth','Session','Error');
 
