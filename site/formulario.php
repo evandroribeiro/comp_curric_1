@@ -1,4 +1,4 @@
-?php
+<?php
 
   // $_POST = variavel
 
