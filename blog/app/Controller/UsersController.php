@@ -1,7 +1,7 @@
- <?php 
+<?php 
 class UsersController extends AppController
 {
-	
+  
   public function beforeFilter()
   {
     parent::beforeFilter();
@@ -48,7 +48,7 @@ class UsersController extends AppController
     }
 
     $this->set('user', $this->User->read(null, $id));
-  }	
+  } 
 
 
   public function register()
@@ -104,7 +104,7 @@ class UsersController extends AppController
       $this->request->data = $this->User->read(null, $id);
       unset($this->request->data['User']['password']);
     }
-  }	
+  } 
 
   public function delete($id = null) 
   {
@@ -227,7 +227,7 @@ class UsersController extends AppController
 
     if( $user['User']['hash_change_password'] != $hash || empty($user))
     {
-      throw new NotFoundException(__('Link inválido'));
+      throw new NotFoundException(__('Link invÃ¡lido'));
     }
 
     # Sends the hash to the form to check before changing the password

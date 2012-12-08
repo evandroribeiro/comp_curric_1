@@ -1,5 +1,7 @@
 <?php 
-
+App::uses('AuthComponent', 'Controller/Component');
+class User extends AppModel
+{
   // app/Model/User.php
 App::uses('AuthComponent', 'Controller/Component');
 class User extends AppModel {
